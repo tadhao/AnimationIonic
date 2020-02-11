@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <div class= "fadeIn">Fade Me</div>
+
+  <div [@elementState]="state">
+    My state changes
+  </div>
+
+  <button ion-button (click)="makeOpaque()">
+    Make it opaque
+  </button>
+
+  <button ion-button (click)="makeTransparent()">
+    Make it transparent
+  </button>
+
+  
+
+  <button ion-button (click)="goToAbout()">
+    Go to the about page
+  </button>
+
+  <div animates #animation="animates" text-center>
+
+  <button ion-button  (click)="animation.start({type:'rubberBand', duration:'1000'})">
+    Click Me!
+  </button>
+</div>
+
+
+<button ion-button  (click)="animateElmt()">
+    Click Me!
+  </button>
+<ion-card #myElm>
+<ion-card-header>
+Rock On!
+</ion-card-header>
+Ben10 is Awesome af and I know it...
+<ion-card-content>
+</ion-card-content>
+</ion-card>
+
+</ion-content>
